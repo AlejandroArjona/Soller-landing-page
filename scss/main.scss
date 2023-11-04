@@ -10,8 +10,6 @@ html{
     font-size: 62.5%;
 }
 
+//Sass partials calling
 @use 'variables' as *;
 
-h1{
-    font-size: $mobile-h1;
-}
