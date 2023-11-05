@@ -1,3 +1,4 @@
+//<------ GLOBAL ------>
 //Reseting all elements without margin and padding
 *{
     box-sizing: border-box;
@@ -7,5 +8,101 @@
 
 //Reseting all font sizes and make that 1rem = 10px
 html{
+    font-family: Roboto, sans-serif;
     font-size: 62.5%;
+}
+
+//<------ TEXTS ------>
+//Setting hero headline
+.hero-headline__mobile{
+    color: $color-mainText;
+    text-align: center;
+    font-size: $mobile-h1;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+//Setting hero text
+.hero-text__mobile{
+    color: $color-mainText;
+    text-align: center;
+    font-size: $mobile-hero-text;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+//Setting button text
+.button-text__mobile{
+    color: $color-buttonText;
+    font-size: $mobile-title-text;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+}
+
+//Setting main text
+.main-text__mobile{
+    color: $color-mainText;
+    text-align: center;
+    font-size: $mobile-main-text;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+//Setting big user card title
+.user-card-big-title__mobile{
+    color: $color-mainText;
+    font-size: $mobile-hero-text;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+//Setting big user card subtitle
+.user-card-big-subtitle__mobile{
+    color: $color-userCardSub;
+    font-size: $mobile-main-text;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+//<------ ORGANISMS ------>
+//Setting mobile button
+.mobile-button{
+    width: 24.3rem;
+    height: 5.6rem;
+    border: 0.2rem solid $color-buttonBg;
+    border-radius: 3.3rem;
+    background: $color-buttonBg;
+    a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.6rem;
+        .arrow-button{
+            width: 2.4rem;
+            height: 2.4rem;
+            background-image: url(../assets/mobile-svg/button_arrow-right/arrow-right.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.user-card-big__mobile{
+    display: flex;
+    column-gap: 1.6rem;
+    .user-card-big-img__mobile{
+        width: 6.4rem;
+        height: 6.4rem;
+        background-image: url('../assets/mobile-img/user-card-big/user-photo.png');
+    }
 }

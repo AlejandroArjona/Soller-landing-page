@@ -7,7 +7,96 @@
 }
 
 html {
+  font-family: Roboto, sans-serif;
   font-size: 62.5%;
+}
+
+.hero-headline__mobile {
+  color: #0F172A;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.hero-text__mobile {
+  color: #0F172A;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.button-text__mobile {
+  color: #78350F;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+}
+
+.main-text__mobile {
+  color: #0F172A;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.user-card-big-title__mobile {
+  color: #0F172A;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.user-card-big-subtitle__mobile {
+  color: #475569;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.mobile-button {
+  width: 24.3rem;
+  height: 5.6rem;
+  border: 0.2rem solid #FCD34D;
+  border-radius: 3.3rem;
+  background: #FCD34D;
+}
+.mobile-button a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1.6rem;
+       column-gap: 1.6rem;
+}
+.mobile-button a .arrow-button {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(../assets/mobile-svg/button_arrow-right/arrow-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.user-card-big__mobile {
+  display: flex;
+  -moz-column-gap: 1.6rem;
+       column-gap: 1.6rem;
+}
+.user-card-big__mobile .user-card-big-img__mobile {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-image: url("../assets/mobile-img/user-card-big/user-photo.png");
 }
 
 header {
@@ -62,4 +151,35 @@ header .header-img .header-img__mobile {
 }
 header .header-img .header-img__desktop {
   display: none;
+}
+
+main {
+  margin: 31rem 1.6rem 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 58rem;
+  margin: 4.8rem 0;
+  row-gap: 6.4rem;
+}
+.hero .hero-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.4rem;
+}
+.hero .hero-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.6rem;
+}
+.hero .hero-comment .main-text__mobile {
+  text-align: start;
 }/*# sourceMappingURL=main.css.map */
