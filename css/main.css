@@ -11,13 +11,17 @@ html {
 }
 
 header {
+  width: 100vw;
+  position: relative;
+}
+header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: auto;
   margin: 0.8rem 1.6rem;
-  position: relative;
 }
-header .header-nav .header-logo {
+header .header-container .header-nav .header-logo {
   width: 8.1rem;
   height: 3.5rem;
   background-image: url("/assets/mobile-svg/header/soller_logo.svg");
@@ -25,34 +29,37 @@ header .header-nav .header-logo {
   background-size: contain;
   background-position: center;
 }
-header .header-nav .header-navbar__desktop {
+header .header-container .header-nav .header-navbar__desktop {
   display: none;
 }
-header .header-buttons .header-contact-button__desktop {
+header .header-container .header-buttons .header-contact-button__desktop {
   display: none;
 }
-header .header-buttons .button__desktop {
+header .header-container .header-buttons .button__desktop {
   display: none;
 }
-header .header-buttons .header-menu__mobile {
-  width: 4rem;
-  height: 4rem;
+header .header-container .header-buttons .header-menu__mobile {
+  width: 4.6rem;
+  height: 4.6rem;
   background-image: url("/assets/mobile-svg/header/hamburguer_icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-header .header-img__mobile {
+header .header-img {
   position: absolute;
+  top: -0.8rem;
+  right: 0;
+  z-index: -1;
+}
+header .header-img .header-img__mobile {
   width: 39.3rem;
   height: 36.2rem;
   background-image: url(../assets/mobile-img/Hero/hero-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  top: -0.8rem;
-  z-index: -1;
 }
-header .header-img__desktop {
+header .header-img .header-img__desktop {
   display: none;
 }/*# sourceMappingURL=main.css.map */
