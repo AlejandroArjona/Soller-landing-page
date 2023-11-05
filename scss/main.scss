@@ -1,15 +1,4 @@
-//Reseting all elements without margin and padding
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-//Reseting all font sizes and make that 1rem = 10px
-html{
-    font-size: 62.5%;
-}
-
 //Sass partials calling
-@use 'variables' as *;
-
+@import 'variables';
+@import 'globalSelectorsMobile';
+@import 'headerMobile';
